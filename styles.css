@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* 
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -72,7 +72,7 @@ nav ul li a {
 }
 
 .product {
-    flex: 0 0 calc(25% - 40px); /* Adjust the width of each product item */
+    flex: 0 0 calc(25% - 40px);
     margin: 0 20px;
     text-align: center;
 }
@@ -96,4 +96,6 @@ nav ul li a {
     max-width: 300px;
     height: auto;
     margin-bottom: 10px;
-}
+} */
+
+
