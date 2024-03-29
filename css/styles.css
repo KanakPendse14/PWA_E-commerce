@@ -1,19 +1,18 @@
-
-* {
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 
 .container {
-    width: 100%; 
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
@@ -22,23 +21,26 @@ header {
     padding: 20px 0;
 }
 
-header nav ul {
-    list-style: none;
+header h1 {
+    margin: 0;
 }
 
-header nav ul li {
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .hero {
-    background-image: url('hero.jpg');
+    background-image: url('/hero.png');
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -46,99 +48,52 @@ header nav ul li a {
 }
 
 .hero h2 {
-    font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .btn {
     display: inline-block;
-    background: #333;
-    color: #fff;
     padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease;
 }
 
-.btn:hover {
-    background: #555;
-}
 
-/* Reset CSS */
-
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.products {
+.products .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .product {
-    width: calc(33.33% - 20px); /* Adjusted width to fit three products in a row */
+    flex: 0 0 calc(25% - 40px); /* Adjust the width of each product item */
+    margin: 0 20px;
+    text-align: center;
+}
+
+.products {
+    padding: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
     margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .product img {
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.product-details {
-    padding: 20px;
-}
-
-.product h3 {
-    margin-top: 0;
-    font-size: 1.5em;
-}
-
-.product p {
+    max-width: 300px;
+    height: auto;
     margin-bottom: 10px;
-}
-
-.product-options {
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #555;
-}
-
-@media only screen and (max-width: 768px) {
-    .product {
-        width: calc(50% - 20px); /* Adjusted width to fit two products in a row for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .product {
-        width: 100%; /* Full width for smaller screens */
-    }
 }

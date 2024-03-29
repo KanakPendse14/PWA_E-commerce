@@ -1,0 +1,13 @@
+        <script src="/script.js">
+            window.addEventListener('load',() =>{
+                async function registerSW(){
+                    try{
+                        await navigator.serviceWorker.register('/service.js');
+                    }
+                        catch (e){
+                            console.log('SW registration failed')
+                        }
+                }
+            }
+            )
+            </script>

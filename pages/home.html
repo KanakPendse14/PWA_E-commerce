@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyGroceryStore</title>
-    <link rel="manifest" href="/manifest.json">
+    <title>My E-commerce Store</title>
     <link rel="stylesheet" href="/css/styles.css">
-   
-
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>MyGroceryStore</h1>
+            <h1>My E-commerce Store</h1>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -23,92 +20,66 @@
             </nav>
         </div>
     </header>
-    
+   
     <section class="hero">
         <div class="container">
-            <h2>Welcome to our store!</h2>
-            <p>Find the best deals on our wide selection of products.</p>
+            <h2>Welcome to Our Store</h2>
+            <p>Explore our latest collection and find what you need!</p>
             <a href="#" class="btn">Shop Now</a>
         </div>
     </section>
-
-
+    <h2>Featured Products</h2>
     <section class="products">
         <div class="container">
-            <h2>Most Trending Products</h2>
+            
             <div class="product">
-                <div class="product-img">
-                    <img src="/media/images/Product1.png" alt="Product 1">
-                </div>
-                <div class="product-details">
-                    <h3>Organic Avocado</h3>
-                    <p>A ripe and creamy avocado, perfect for salads or guacamole.</p>
-                    <p>$2.99</p>
-                    <div class="product-options">
-                        <a href="#" class="btn add-to-cart">Add to Cart</a>
-                        <a href="#" class="btn buy-now">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="product">
-                <div class="product-img">
-                    <img src="/media/images/Product1.png" alt="Product 2">
-                </div>
-                <div class="product-details">
-                    <h3>Organic Quinoa</h3>
-                    <p>Nutrient-rich quinoa, great for salads, soups, and side dishes.</p>
-                    <p>$4.99</p>
-                    <div class="product-options">
-                        <a href="#" class="btn add-to-cart">Add to Cart</a>
-                        <a href="#" class="btn buy-now">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="product">
-                <div class="product-img">
-                    <img src="/media/images/Product1.png" alt="Product 3">
-                </div>
-                <div class="product-details">
-                    <h3>Fresh Berries Mix</h3>
-                    <p>A delightful mix of strawberries, blueberries, and raspberries.</p>
-                    <p>$6.99</p>
-                    <div class="product-options">
-                        <a href="#" class="btn add-to-cart">Add to Cart</a>
-                        <a href="#" class="btn buy-now">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- <section class="products">
-        <div class="container">
-            <h2>Featured Products</h2>
-            <div class="product">
-                <img src="/media/images/Product1.png" alt="Product 1">
-                <h3>Product 1</h3>
+                <img src="/media/images/Applesproduct2.png" alt="Product 1">
+                <h3>Product Name</h3>
                 <p>$19.99</p>
                 <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Buy now</a>
             </div>
             <div class="product">
-                <img src="/media/images/Product1.png" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>$24.99</p>
+                <img src="/media/images/Applesproduct2.png" alt="Product 1">
+                <h3>Product Name</h3>
+                <p>$19.99</p>
                 <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Buy now</a>
             </div>
-            
+            <div class="product">
+                <img src="/media/images/Applesproduct2.png" alt="Product 1">
+                <h3>Product Name</h3>
+                <p>$19.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Buy now</a>
+            </div>
+            <div class="product">
+                <img src="/media/images/Applesproduct2.png" alt="Product 1">
+                <h3>Product Name</h3>
+                <p>$19.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Buy now</a>
+            </div>
+            <!-- Add more product items here -->
         </div>
-    </section> -->
-
+    </section>
+    <script src="/script.js">
+        window.addEventListener('load',() =>{
+            async function registerSW(){
+                try{
+                    await navigator.serviceWorker.register('/service.js');
+                }
+                    catch (e){
+                        console.log('SW registration failed')
+                    }
+            }
+        }
+        )
+        </script>
     <footer>
         <div class="container">
-            <p>&copy; 2024 My E-Commerce Store. All rights reserved.</p>
+            <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
         </div>
     </footer>
 </body>
 </html>
-
-
