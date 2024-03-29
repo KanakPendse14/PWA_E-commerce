@@ -2,6 +2,11 @@
     "name": "My Grocery Store",
     "short_name": "GroceryShop",
     "description": "Every Day Necessory items shop",
+    "theme_color": "#ffd31d",
+    "start_url": "index.html", 
+    "scope": "./",
+    "background_color": "#333", 
+    "display": "standalone",
     "icons": [
       {
         "src": "/icons/icon.png",
@@ -43,10 +48,7 @@
         "sizes": "512x512",
         "type": "image/png"
       }
-    ],
-    "start_url": "/myGroceyStore ",
-    "display": "standalone",
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff"
+    ]
+
   }
   
